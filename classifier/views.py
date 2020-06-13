@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.core.files.storage import FileSystemStorage
 
+import os
 import cv2
 import json
 import argparse
@@ -47,3 +48,9 @@ def predictImage(request):
 
     context = {'filePathName': filePathName, 'predictedLabel': labels[str(np.argmax(results))]}
     return render(request, 'classifier/predict.html', context)
+
+def viewDatabase(request):
+    images = os.listdir('./media/')
+    imagesPath = ['./media/' + i for i in images]
+    context = {'imagesPath': imagesPath}
+    return render(request, 'classifier/viewDatabase.html', context)

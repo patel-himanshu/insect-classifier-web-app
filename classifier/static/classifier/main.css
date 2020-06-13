@@ -1,19 +1,26 @@
 body {
-    background-color: rgba(252, 252, 158, 0.986);
     margin: 0.1px;
     text-align: center;
+    background-color: rgba(252, 252, 158, 0.986);
 }
 
 .head {
-    font-size: 3.5em;
-    margin: 2px;
     margin-top: 3px;
-    padding: 0.2em 0 0.2em 0;
+    font-size: 3.5em;
+    background-color: rgba(252, 134, 0, 0.993);
+}
+
+.navbar {
+    margin: 0;
+    font-size: 1.3em;
+    border-top: 4px double red;
     background-color: rgba(252, 134, 0, 0.993);
 }
 
 a {
     color: blue;
+    padding-left: 75px;
+    padding-right: 75px;
     text-decoration: none;
 }
 
@@ -39,9 +46,10 @@ input {
 footer {
     color: white;
     /* margin-top: auto; */
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 2em;
     font-size: 1.3em;
     padding: 0.8em 0 0.8em 0;
     background-color: rgb(29, 58, 32);

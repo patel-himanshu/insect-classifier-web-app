@@ -1,0 +1,11 @@
+{% extends 'classifier/base.html' %}
+
+{% block content %} 
+<center>
+    <h1>The list of images present in database are:</h1>
+
+    {% for i in imagesPath %}
+        <img src={{i}} style="width: 200px; height: 200px; margin:2px;">
+    {% endfor %}
+</center>
+{% endblock content %}
