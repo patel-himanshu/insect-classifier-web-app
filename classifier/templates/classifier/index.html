@@ -1,14 +1,30 @@
-{% load static %}
+{% extends 'classifier/base.html' %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'classifier/main.css' %}">
-    <title>Crop Insect Classifier</title>
-</head>
-<body>
-    <h1>Crop Insect Classifier</h1>
-</body>
-</html>
+{% block content %}
+
+<h2>Upload Image for Classification</h2>
+
+<hr>
+
+<form method="post" enctype="multipart/form-data" action="predictImage">
+
+    {% csrf_token %}
+    <label for="fname">
+        <b>Upload Image File Here:</b>
+    </label> 
+    
+    <input name="filePath" type="file">
+    <br><br><br>
+    <input type="submit" value="Submit">
+
+    <hr>
+
+    <h2><b>Result</b>: {{predictedLabel}}</h2>
+
+    <img src={{filePathName}} alt='imagename' style="width:400px; height:400px;">
+    <br>
+    {{filePathName}}
+
+</form>
+
+{% endblock content %}
