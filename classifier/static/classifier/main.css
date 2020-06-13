@@ -1,0 +1,48 @@
+body {
+    background-color: rgba(252, 252, 158, 0.986);
+    margin: 0.1px;
+    text-align: center;
+}
+
+.head {
+    font-size: 3.5em;
+    margin: 2px;
+    margin-top: 3px;
+    padding: 0.2em 0 0.2em 0;
+    background-color: rgba(252, 134, 0, 0.993);
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+hr {
+    margin-top: 0;
+    border: 2px solid red;
+}
+
+
+img {
+    border: 5px double rgb(22, 71, 231);
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+footer {
+    color: white;
+    /* margin-top: auto; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.3em;
+    padding: 0.8em 0 0.8em 0;
+    background-color: rgb(29, 58, 32);
+}

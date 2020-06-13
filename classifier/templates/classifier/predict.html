@@ -1,0 +1,30 @@
+{% extends 'classifier/base.html' %}
+
+{% block content %}
+
+<h2><u>Upload Image for Classification</u></h2>
+
+<!-- <hr> -->
+
+<form method="post" enctype="multipart/form-data" action="predictImage">
+
+    {% csrf_token %}
+    <label for="fname">
+        <b>Upload Image File Here:</b>
+    </label> 
+    
+    <input name="filePath" type="file">
+    <br><br>
+    <input type="submit" value="Submit">
+
+    <hr>
+
+    <h2><b>Result</b>: {{predictedLabel}}</h2>
+
+    <img src={{filePathName}} alt='imagename'>
+    <br>
+    <!-- {{filePathName}} -->
+
+</form>
+
+{% endblock content %}
