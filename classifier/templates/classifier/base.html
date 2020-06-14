@@ -16,22 +16,26 @@
 </head>
 
 <body>
-    <div class="head">
-        <a href="{% url 'home' %}"><b>Crop Insect Classifier</b></a>
-    </div>
-    <div class="navbar">
-        <a href="{% url 'home' %}">Home</a>
-        <a href="{% url 'viewDatabase' %}">Database</a>
-    </div>
-    <hr>
-
-    <div class="container">
-        {% block content %}
-        {% endblock %}
-    </div>
+    <div class="page-container">
+        <div class="matter">
+            <div class="head">
+                <a href="{% url 'home' %}"><b>Crop Insect Classifier</b></a>
+            </div>
+            <div class="navbar">
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'viewDatabase' %}">Database</a>
+            </div>
+            <hr>
+        
+            <div class="container">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
     
-    <div class="footer">
-        Made by <b>Himanshu Patel</b>
+        <div class="footer">
+            Made by <b>Himanshu Patel</b>
+        </div>
     </div>
 </body>
 
