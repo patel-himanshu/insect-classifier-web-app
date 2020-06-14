@@ -43,13 +43,13 @@ input {
     margin-bottom: 10px;
 }
 
-footer {
+.footer {
     color: white;
     /* margin-top: auto; */
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    margin-top: 2em;
+    /* margin-top: 2em; */
     font-size: 1.3em;
     padding: 0.8em 0 0.8em 0;
     background-color: rgb(29, 58, 32);
