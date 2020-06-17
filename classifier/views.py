@@ -6,9 +6,10 @@ import cv2
 import json
 import argparse
 import numpy as np
-import tensorflow
+# import tensorflow
 # from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing.image import load_img, img_to_array
+# from tensorflow.keras.preprocessing.image import load_img, img_to_array
+import tflite_runtime.interpreter as tflite
 
 # Image Preprocessing, Reading Labels, and Loading model
 with open('./models/labels.json', 'r') as labelFile:
@@ -16,7 +17,7 @@ with open('./models/labels.json', 'r') as labelFile:
 
 labels = json.loads(labels)
 # model = load_model('./models/googlenet.h5')
-interpreter = tensorflow.lite.Interpreter(model_path='./models/mobilenet.tflite')
+interpreter = tflite.Interpreter(model_path='./models/mobilenet.tflite')
 interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
