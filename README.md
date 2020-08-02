@@ -11,7 +11,4 @@
 
 # Images of the Web App
 
-![](images/1.png)
-![](images/2.png)
-![](images/3.png)
-![](images/4.png)
+![](images/Web_App.png)
