@@ -1,6 +1,6 @@
 # Insect Classifier WebApp
 
-1. Install python package `virtualenv` (if it is not installed), using **`pip install virtualenv`**.
+1. Install Python package `virtualenv` (if it is not installed), using **`pip install virtualenv`**.
 1. Create a virtual environment in desired directory, using **`python3 -m venv my_env`**, where `my_env` is the name of your virtual environment. You can replace it with any other name of your choice.
 1. Now activate your virtual environment using **`source my_env/bin/activate`**.
 1. Clone the files from the repo using **`https://github.com/patel-himanshu/Insect-Classifier-WebApp`**.
