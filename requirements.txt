@@ -1,7 +1,0 @@
-asgiref==3.2.9
-Django>=3.1.6
-numpy==1.18.5
-opencv-python==4.2.0.34
-pytz==2020.1
-sqlparse==0.3.1
-tflite-runtime @ https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp37-cp37m-linux_x86_64.whl

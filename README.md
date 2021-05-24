@@ -9,6 +9,7 @@
 1. The development server starts at **`localhost:8000`**. Enter the URL in your browser to visit the web app.
 1. To stop the development server, press **CTRL + C** in the terminal window.
 
+*Note*: The version of `tflite-runtime` library mentioned in the `requirements.txt` works only on Linux. You may check whether the newer version of the library is available for Windows or not, or whether you need to use tflite in your project or not.
 # Images of the Web App
 
 ![](images/Web_App.png)
