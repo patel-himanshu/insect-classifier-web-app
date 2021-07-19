@@ -13,3 +13,5 @@
 # Images of the Web App
 
 ![](images/Web_App.png)
+
+The Jupyter notebooks of the CNN models used, can be found [here](https://github.com/patel-himanshu/crop-insect-classification).
